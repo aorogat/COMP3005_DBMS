@@ -14,13 +14,13 @@ Create a new database called `DemoDB`.
 ### Step 4: 
 Create a table called `users`.
 - Open a SQL Query tool and run:
-\```
+```sql
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     name VARCHAR(50),
     email VARCHAR(100)
 );
-\```
+```
 
 ## Java CRUD Application using JDBC:
 
@@ -34,7 +34,7 @@ Add the JDBC driver to your project.
 
 ### Step 3: 
 Java Code:
-\```
+```java
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -122,7 +122,7 @@ public class DatabaseOperations {
       scanner.close();
   }
 }
-\```
+```
 
 Replace `YOUR_USERNAME` and `YOUR_PASSWORD` with your PostgreSQL username and password.
 
